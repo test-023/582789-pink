@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Любовь Гребенникова](https://up.htmlacademy.ru/adaptive/15/user/582789).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Горбачев](https://up.htmlacademy.ru/adaptive/15/user/92028).
 
 ---
 
