@@ -86,13 +86,17 @@
         <div class="photo-editor__wrapper">
           <form class="photo-editor__form">
             <img class="photo-editor__image" src="img/photo-editor-image.jpg" width="" height="" alt="Изображение природы">
-            <div class="photo-editor__item photo-editor__item--active crop ">
+            <div class="photo-editor__container">
+              <button type="button" class="photo-editor__item photo-editor__item--active crop"><span class="visually-hidden">Обрезка</span></a></button>
             </div>
-            <div class="photo-editor__item color-fill">
+            <div class="photo-editor__container">
+              <button type="button" class="photo-editor__item color-fill><span class="visually-hidden">Заливка цветом</span></a></button>
             </div>
-            <div class="photo-editor__item contrast">
+            <div class="photo-editor__container contrast">
+              <button type="button" class="photo-editor__item contrast"><span class="visually-hidden">Контрастность</span></a></button>
             </div>
-            <div class="photo-editor_btn">
+            <input type="range" min="0" max="100" step="1" value="50">
+            <div class="photo-editor_buttons">
               <a href="#" class="photo-editor__post">Запостить</a>
               <button class="photo-editor__cancellation">Отмена</button>
             </div>
