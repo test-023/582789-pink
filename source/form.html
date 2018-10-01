@@ -7,7 +7,7 @@
   <body>
     <header class="page-header form-header">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="78" heigt="35" alt="PINK">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="78" height="35" alt="PINK">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"></button>
@@ -75,11 +75,11 @@
           <div class="filters__name user-data">
             <p class="user-data__text">
               <label for="user-tel">Номер телефона</label>
-              <input class="?" id="user-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              <input class="user-data__input" id="user-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
             </p>
             <p class="user-data__text">
               <label for="user-email">Адрес почты</label>
-              <input class="?" id="user-email" type="email" name="email" placeholder="Введите почту<sup>*</sup>">
+              <input class="user-data__input" id="user-email" type="email" name="email" placeholder="Введите почту<sup>*</sup>">
             </p>
           </div>
           <fieldset class="filters__app user-info" >
@@ -87,14 +87,14 @@
             <ul class="user-info__list">
               <li>
                 <input class="visually-hidden" type="radio" name="radio" id="filters-ios" checked>
-                <label for="filter-ios">Pink для iOS</label>
+                <label for="filters-ios">Pink для iOS</label>
               </li>
               <li>
-                <input class="visually-hidden" type="radio" name="radio" id="filter-android">
+                <input class="visually-hidden" type="radio" name="radio" id="filters-android">
                 <label for="filters-android">Pink на Android</label>
               </li>
               <li>
-                <input class="visually-hidden" type="radio" name="radio" id="filter-windows">
+                <input class="visually-hidden" type="radio" name="radio" id="filters-windows">
                 <label for="filters-windows">Windows Phone</label>
               </li>
             </ul>
@@ -102,7 +102,7 @@
           <div class="filters__emotion user-data">
             <p class="user-data__text">
               <label for="user-text">Опишите свои эмоции</label>
-              <textarea class="?" id="user-text" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="user-data__textarea" id="user-text" name="user-data-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </div>
           <button class="filters__button" type="button">Отправить форму</button>
