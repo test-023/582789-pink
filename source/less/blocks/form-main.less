@@ -1,12 +1,12 @@
 .form-main {
 	width: 360px;
 	margin: 0 auto;
-	background-color: @dark-blue; 
+	background-color: @dark-blue;
 }
 
 .form-main__title {
 	margin: 0;
-	padding: 0 20px;
+	padding: 0 68px;
 	padding-top: 35px;
 	padding-bottom: 50px;
 	text-align: center;
@@ -26,10 +26,31 @@
 	padding-top: 55px;
 	padding-bottom: 50px;
 	background-color: @white;
-	text-align: center;
+  text-align: center;
 }
 
 .form-main__text {
 	margin: 0;
 	line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-main {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-main {
+    width: 960px;
+  }
+  .form-main__text {
+    width: 611px;
+    margin: 0 auto;
+  }
+  .form-main__title {
+    font-size: 50px;
+    line-height: 70px;
+    padding: 0 ;
+  }
 }

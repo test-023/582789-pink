@@ -1,13 +1,37 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
 	width: 360px;
 	margin: 0 auto;
-	background-color: @dark-blue; 
+	background-color: @dark-blue;
 }
 
 .page-header__logo {
-	margin-left: auto;
+  margin-left: 40px;
 }
 
 .main-nav__toggle {
 	margin-right: auto;
+}
+
+.page-header__logo-image {
+  position: absolute;
+  top: 177px;
+  left: 0;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 660px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    flex-direction: row;
+    width: 1200px;
+  }
 }

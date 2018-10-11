@@ -1,8 +1,7 @@
 .photo-main {
 	width: 360px;
 	margin: 0 auto;
-	padding-bottom: 85px;
-	background-color: @dark-blue; 
+	background-color: @dark-blue;
 }
 
 .photo-main__title {
@@ -20,4 +19,30 @@
 	background-repeat: no-repeat;
 	background-position: 99% 28%;
 	background-size: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-main {
+    width: 660px;
+  }
+  .photo-main__title {
+   font-size: 50px;
+   line-height: 60px;
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-main {
+    width: 1200px;
+    min-height: 280px;
+  }
+
+  .photo-main__title {
+   font-size: 50px;
+   line-height: 60px;
+   padding-top: 80px;
+   padding-bottom: 140px;
+  }
 }

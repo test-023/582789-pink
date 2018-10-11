@@ -2,13 +2,13 @@
 	width: 320px;
 	margin: 0 auto;
 	padding: 0 20px;
-	padding-top: 45px;
+  padding-top: 45px;
 	background-color: @white;
 	text-align: center;
 }
 
 .contacts__title {
-	margin-top: 45px;
+  margin: 0;
 	margin-bottom: 45px;
 	font-size: 24px;
 	line-height: 30px;
@@ -30,5 +30,27 @@
 }
 
 .contacts__map {
+  min-height: 200px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat 50% 96%;
+}
 
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 620px;
+  }
+  .contacts__map {
+    min-height: 370px;
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 69%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 960px;
+    padding: 0 120px;
+  }
+  .contacts__map {
+    min-height: 500px;
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat 50% 96%;
+  }
 }

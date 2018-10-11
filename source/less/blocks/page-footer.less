@@ -7,7 +7,37 @@
 	background-color: @white;
 }
 
+.page-footer--none {
+    display: none;
+  }
+
 .page-footer__copyright {
 	font-size: 14px;
 	line-height: 18px;
+}
+
+.page-footer__logo-image {
+  display: inline-block;
+  width: 160px;
+  width: 60px;
+  &:hover,
+  &:focus path {
+    fill: @red;
+    }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 620px;
+  }
+    &--none {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1200px;
+    padding: 0 120px;
+  }
 }

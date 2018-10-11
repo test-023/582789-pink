@@ -17,6 +17,8 @@
 	display: block;
 	margin-bottom: 15px;
 	margin-left: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .filters__input {
@@ -56,6 +58,8 @@
 
 .filters__legend {
 	text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .filters__item {
@@ -87,4 +91,38 @@
 
 .filter__sup {
 	color: @red;
+}
+
+@media (min-width: @tablet-width) {
+  .filters {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .filters__label {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .filters__input {
+    width: 495px;
+  }
+  .filters__input--long {
+    width: 530px;
+  }
+  .filters__form {
+    .flex;
+  }
+  .filters__app {
+    border: 2px solid @gray;
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filters {
+    margin: 0 auto;
+    width: 940px;
+    padding: 0 130px;
+  }
 }

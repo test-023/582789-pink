@@ -2,7 +2,7 @@
 	width: 320px;
 	padding: 0 20px;
 	margin: 0 auto;
-	background-color: @white; 
+	background-color: @white;
 }
 
 .user-photos__text {
@@ -14,4 +14,21 @@
 
 .user-photos__list {
 	.list;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos {
+    width: 620px;
+    padding: 0 20px;
+  }
+  .user-list__first-item-container {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photos  {
+    width: 960px;
+    padding: 0 120px;
+  }
 }

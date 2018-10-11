@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
@@ -30,41 +33,52 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink для обработки и украшения фотографий</h1>
-      <section class="promo">
-        <h2 class="visually-hidden">Демонстрация приложения на телефоне</h2>
-        <img class="page-header__logo-image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="PINK">
-      </section>
-      <section class="download">
-        <h2 class="visually-hidden">Скачать приложение</h2>
-        <a href="https://itunes.apple.com" class="download__link">Скачать приложение</a>
-        <ul class="download__list systems-list">
-          <li class="systems-list__item"><a class="systems-list__link systems-list__link--apple" href="https://www.apple.com" class="apple">Эппл</a></li>
-          <li class="systems-list__item"><a class="systems-list__link systems-list__link--android" href="https://play.google.com/store" class="android">Андроид</a></li>
-          <li class="systems-list__item"><a class="systems-list__link systems-list__link--windows" href="https://www.microsoft.com/en-us/store/" class="windows">Виндоус</a></li>
-        </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
+      <div class="page-main__container">
+        <section class="promo">
+          <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
+        </section>
+        <section class="download">
+          <h2 class="visually-hidden">Скачать приложение</h2>
+          <a href="https://itunes.apple.com" class="download__link">Скачать приложение</a>
+          <ul class="download__list systems-list">
+            <li class="systems-list__item"><a class="systems-list__link systems-list__link--apple" href="https://www.apple.com" class="apple">Эппл</a></li>
+            <li class="systems-list__item"><a class="systems-list__link systems-list__link--android" href="https://play.google.com/store" class="android">Андроид</a></li>
+            <li class="systems-list__item"><a class="systems-list__link systems-list__link--windows" href="https://www.microsoft.com/en-us/store/" class="windows">Виндоус</a></li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </section>
+      </div>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения</h2>
         <div class="advantages__container">
           <p class="advantages__text">Устали от серости мегаполиса?</p>
           <p class="advantages__text">Нам есть, что вам предложить!</p>
         </div>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение фото с телефона с эффектом приложения">
+        <div class="advantagers__list-container">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+        <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение телефона">
+      </section>
+      <section class="effect">
+        <div class="effect__container">
+          <h2 class="effect__title">Эффект на 24 часа!</h2>
+          <p class="effect__text">Британские ученые провели исследования и доказали,
+  что положительный&#160;эффект от&#160;использования приложения длится целые сутки!</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -72,14 +86,17 @@
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__age">25 лет, водитель трамвая</p>
               <p class="reviews-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="reviews__item slider__item">
               <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__age">25 лет, водитель трамвая</p>
               <p class="reviews-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="reviews__item slider__item">
               <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__age">25 лет, водитель трамвая</p>
               <p class="reviews-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
@@ -94,26 +111,30 @@
       </section>
       <section class="rates">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table class="rates__table slider__list">
+        <table class="rates__table">
           <tr class="slider-item">
-            <th class="rates__value">Стандарт<span class="rates__price">3,99 usd</span></th>
-            <th class="rates__value">Стандарт<span class="rates__price">3,99 usd</span></th>
-            <th class="rates__value">Стандарт<span class="rates__price">3,99 usd</span></th>
+            <th class="rates__value">Анлим <span class="rates__price">9,99&#160;usd</span></th>
+            <th class="rates__value">База  <span class="rates__price">1,99&#160;usd</span></th>
+            <th class="rates__value">Стандарт <span class="rates__price">3,99&#160;usd</span></th>
+            <th class="rates__value">Анлим <span class="rates__price">9,99&#160;usd</span></th>
           </tr>
           <tr class="slider-item">
             <td class="rates__field">Розовый фильтр</td>
-            <td class="rates__field">Розовый фильтр</td>
-            <td class="rates__field">Розовый фильтр</td>
+            <td class="rates__field"></td>
+            <td class="rates__field"></td>
+            <td class="rates__field"></td>
           </tr>
           <tr class="slider-item">
             <td class="rates__field">Смайлики</td>
-            <td class="rates__field">Смайлики</td>
-            <td class="rates__field">Смайлики</td>
+            <td class="rates__field"></td>
+            <td class="rates__field"></td>
+            <td class="rates__field"></td>
           </tr>
           <tr class="slider-item">
             <td class="rates__field">Комментарии</td>
-            <td class="rates__field">Комментарии</td>
-            <td class="rates__field">Комментарии</td>
+            <td class="rates__field"></td>
+            <td class="rates__field"></td>
+            <td class="rates__field"></td>
           </tr>
         </table>
         <p class="rates__toggles slider__toggles">
@@ -132,11 +153,24 @@
         <p class="contacts__text">Приезжайте в гости</p>
         <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
         <div class="contacts__map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="645">
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer page-footer--none">
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logotype-big-mobile.svg" alt="Логотип Pink">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="twitter"><span class="visually-hidden">Твиттер</span></a></li>
+            <li class="social__item"><a href="#" class="facebook"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li class="social__item"><a href="#" class="youtube"><span class="visually-hidden">Ютуб</span></a></li>
+          </ul>
+        </div>
+        <span class="page-footer__copyright">Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="htmlacademy"><span class="visually-hidden">HTML Академия</span></a>
+      </div>
     </footer>
   </body>
 </html>

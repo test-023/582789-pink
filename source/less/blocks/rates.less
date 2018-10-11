@@ -3,21 +3,25 @@
 	margin: 0 auto;
 	padding: 0 20px;
 	background-color: @gray;
-	text-align: center;	
+	text-align: center;
 }
 
 .rates__table {
-	text-align: center;	
+	text-align: center;
 	width: 100%;
 }
 
 .rates__value {
 	margin-top: 20px;
+  width: 150px;
 	margin-bottom: 13px;
+  padding: 15px 0px;
 	background-color: @dark-blue;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
+  color: @white;
+  text-transform: uppercase;
 }
 
 .rates__price {
@@ -34,4 +38,17 @@
 .rates__toggles {
 	margin: 0;
 	padding-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .rates {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates {
+    width: 960px;
+    padding: 0 120px;
+  }
 }

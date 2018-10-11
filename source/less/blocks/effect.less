@@ -1,0 +1,44 @@
+.effect {
+  display: none;
+  margin: 0 auto;
+  width: 320px;
+  padding: 0 20px;
+  background-color: @white;
+}
+
+.effect__container {
+  width: 305px;
+  padding: 100px 0;
+  margin-left: auto;
+}
+
+.effect__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: @black;
+}
+
+.effect__link {
+  color: @red;
+  text-decoration: underline;
+}
+
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+    width: 620px;
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    display: block;
+    width: 960px;
+    padding: 0 120px;
+
+  }
+}
