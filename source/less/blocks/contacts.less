@@ -1,10 +1,14 @@
 .contacts {
-	width: 320px;
-	margin: 0 auto;
-	padding: 0 20px;
   padding-top: 45px;
 	background-color: @white;
 	text-align: center;
+}
+
+.contacts__wrapper {
+  width: 360px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .contacts__title {
@@ -35,9 +39,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    width: 620px;
+  .contacts__wrapper {
+    width: 660px;
   }
+
   .contacts__map {
     min-height: 370px;
     background: url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 69%;
@@ -45,8 +50,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts {
-    width: 960px;
+  .contacts__wrapper {
+    width: 1200px;
     padding: 0 120px;
   }
   .contacts__map {

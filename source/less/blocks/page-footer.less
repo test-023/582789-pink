@@ -1,7 +1,4 @@
 .page-footer {
-	width: 320px;
-	margin: 0 auto;
-	padding: 0 20px;
 	padding-top: 41px;
 	padding-bottom: 35px;
 	background-color: @white;
@@ -9,6 +6,10 @@
 
 .page-footer__wrapper {
   text-align: center;
+  width: 360px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .page-footer--none {
@@ -51,8 +52,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
-    width: 620px;
+  .page-footer__wrapper {
+    width: 660px;
   }
     &--none {
     display: block;
@@ -77,8 +78,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    width: 960px;
+  .page-footer__wrapper {
+    width: 1200px;
     padding: 0 120px;
   }
 

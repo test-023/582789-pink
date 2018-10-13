@@ -1,15 +1,6 @@
 .effect {
   display: none;
-  margin: 0 auto;
-  width: 320px;
-  padding: 0 20px;
   background-color: @white;
-}
-
-.effect__container {
-  width: 305px;
-  padding: 100px 0;
-  margin-left: auto;
 }
 
 .effect__title {
@@ -29,16 +20,25 @@
 @media (min-width: @tablet-width) {
   .effect {
     display: block;
-    width: 620px;
+  }
 
+  .effect__wrapper {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: @desktop-width) {
   .effect {
     display: block;
+  }
+
+  .effect__wrapper {
     width: 960px;
     padding: 0 120px;
-
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }

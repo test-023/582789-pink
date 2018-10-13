@@ -1,9 +1,13 @@
 .rates {
-	width: 320px;
-	margin: 0 auto;
-	padding: 0 20px;
 	background-color: @gray;
 	text-align: center;
+}
+
+.rates__wrapper {
+  width: 360px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .rates__table {
@@ -41,14 +45,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .rates {
-    width: 620px;
+  .rates__wrapper {
+    width: 660px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .rates {
-    width: 960px;
+  .rates__wrapper {
+    width: 1200px;
     padding: 0 120px;
   }
 }

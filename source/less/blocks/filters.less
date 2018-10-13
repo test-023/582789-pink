@@ -1,7 +1,4 @@
 .filters {
-	width: 320px;
-	margin: 0 auto;
-	padding: 0 20px;
 	background-color: @white;
 	font-size: 18px;
 	line-height: 30px;
@@ -78,10 +75,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .filters {
-    width: 620px;
-    padding: 0 20px;
-  }
 
   .filters__textarea {
     width: 500px;
@@ -115,16 +108,9 @@
   .filters__user-data {
     border: none;
   }
-
 }
 
 @media (min-width: @desktop-width) {
-  .filters {
-    margin: 0 auto;
-    width: 940px;
-    padding: 0 130px;
-  }
-
   .filters__user-data {
     width: 435px;
   }
@@ -146,6 +132,7 @@
 }
 
 @media (max-width: @mobile-width) {
+
   .filters__user-data {
     order: 1;
   }

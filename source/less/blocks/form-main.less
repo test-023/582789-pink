@@ -1,7 +1,13 @@
 .form-main {
-	width: 360px;
-	margin: 0 auto;
-	background-color: @dark-blue;
+  background-color: @white;
+}
+
+.form-main__wrapper {
+  width: 360px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
 }
 
 .form-main__title {
@@ -21,8 +27,7 @@
 	background-size: cover;
 }
 
-.form-main__wrapper {
-	padding: 0 20px;
+.form-main__container {
 	padding-top: 55px;
 	padding-bottom: 50px;
 	background-color: @white;
@@ -35,14 +40,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form-main {
+  .form-main__wrapper {
     width: 660px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form-main {
-    width: 960px;
+  .form-main__wrapper {
+    width: 1200px;
+    padding: 0 120px;
   }
   .form-main__text {
     width: 611px;

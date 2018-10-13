@@ -1,10 +1,15 @@
 .photo-main {
-	width: 360px;
-	margin: 0 auto;
-	background-color: @dark-blue;
+    background-color: @dark-blue;
+}
+
+.photo-main__title-wrapper {
+  width: 360px;
+  margin: 0 auto;
+
 }
 
 .photo-main__title {
+  display: block;
 	margin: 0;
 	padding: 0 20px;
 	padding-top: 35px;
@@ -22,27 +27,28 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photo-main {
+  .photo-main__title-wrapper{
     width: 660px;
   }
+
   .photo-main__title {
-   font-size: 50px;
-   line-height: 60px;
+    font-size: 50px;
+    line-height: 60px;
     padding-top: 80px;
     padding-bottom: 140px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .photo-main {
+  .photo-main__title-wrapper {
     width: 1200px;
     min-height: 280px;
   }
 
   .photo-main__title {
-   font-size: 50px;
-   line-height: 60px;
-   padding-top: 80px;
-   padding-bottom: 140px;
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 80px;
+    padding-bottom: 140px;
   }
 }
