@@ -13,6 +13,16 @@
 	cursor: pointer;
 }
 
+.site-list__link[href] {
+  &:hover {
+    color: @red;
+  }
+
+  &:active {
+    color: @red-active;
+  }
+}
+
 .site-list__item {
 	border-top: 1px solid @border;
   border-bottom: 1px solid @black;

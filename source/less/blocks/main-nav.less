@@ -26,6 +26,22 @@
   }
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 70px;
+  height: 50px;
+  background-color: @white;
+  box-shadow: 0 8px 0 0 @white, 0 16 0 0 @white;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: @red-active;
+  box-shadow: 0 8px 0 0 @red-active, 0 16 0 0 @red-active;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
 
