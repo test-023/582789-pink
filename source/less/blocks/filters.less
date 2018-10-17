@@ -57,6 +57,11 @@
 
 }
 
+.filter__item--radio {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
 .filters__textarea {
 	font-size: 18px;
 	line-height: 30px;
@@ -75,6 +80,9 @@
 
 .filters__list {
   .list;
+}
+
+.filters__list--achievement {
   .flex;
   padding: 0 60px;
 }
@@ -101,6 +109,7 @@
 
 .filters__user-container {
   display: flex;
+  justify-content: space-between;
   padding: 0 60px;
 }
 
@@ -111,11 +120,7 @@
 .filters__upside {
   .flex;
   flex-direction: row;
-  margin-left: auto;
-}
-
-.filters__upside:nth-child(2) {
-  margin-right: auto;
+  width: 375px;
 }
 
 .filters__label-down {
@@ -133,44 +138,104 @@
   justify-content: space-between;
 }
 
-@media (max-width: @tablet-width) {
-
-  .filters__textarea {
-    width: 500px;
+@media (max-width: @desktop-width) {
+  .filters {
+    width: 620px;
   }
 
-  .filters__emotions {
-    text-align: center;
-  }
-  .filters__user-data .filters__label {
-    display: inline;
+  .filters__list--achievement {
+    display: block;
   }
 
-  .filters__fildset {
-    margin-bottom: 60px;
+  .filters__item {
+    width: 100%;
   }
 
-  .filters__upside {
-    .flex;
-  }
-
-  .filters__label-down {
-    order: 2;
+  .filters__user-container {
+    display: block;
   }
 
   .filters__input-up {
-    width: 500px;
-    order: 1;
+    width: 100%;
+  }
+
+  .filters__upside {
+    width: 100%;
+  }
+
+  .filters__app {
+    width: 100%;
+    margin-left: 0;
   }
 
   .filters__user-data {
-    border: none;
+    width: 100%;
+  }
+
+  .filters__input {
+    width: 525px;
   }
 }
 
 @media (max-width: @tablet-width) {
+  .filters {
+    width: 280px;
+    padding: 0 20px;
+  }
+
+  .filters__form {
+    display: flex;
+  }
+
+  .filters__fildset {
+    border: none;
+  }
+  .filters__user-container {
+    width: 280px;
+    padding: 0;
+  }
+
+  .filters__user-contacts legend {
+    display: none;
+  }
+
+  .filters__achievement {
+    background-color: @gray;
+    margin: 0 -20px;
+    padding-left: 30px;
+  }
+
+  .filters__app {
+    background-color: @gray;
+    margin: 0 -20px;
+    padding-left: 30px;
+  }
+
+  .filters__list--achievement {
+    padding: 0;
+  }
+
+  .filters__send-form {
+    justify-content: center;
+  }
+
+  .filters__emotions {
+    padding: 0;
+  }
+
+  .filters__input-up {
+    order: 2;
+  }
+  .filters__label-down {
+    order: 1;
+  }
+
+  .filters__input {
+    width: 100%;
+  }
 
   .filters__user-data {
+    width: 280px;
     order: 1;
   }
 
@@ -187,5 +252,9 @@
 
   .filters-emotions {
     order: 5;
+  }
+
+  .filters__send-form {
+    order: 6;
   }
 }
