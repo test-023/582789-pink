@@ -41,6 +41,9 @@
   background-color: @red-active;
   box-shadow: 0 8px 0 0 @red-active, 0 16 0 0 @red-active;
 }
+@media (max-width: @mobile-width-only) {
+
+}
 
 @media (min-width: @tablet-width) {
   .main-nav {
@@ -51,9 +54,12 @@
 @media (min-width: @desktop-width) {
   .main-nav__list {
     display: flex;
+    width: 100%;
     justify-content: space-between;
   }
+
   .main-nav {
     text-align: none;
+    width: 100%;
   }
 }
