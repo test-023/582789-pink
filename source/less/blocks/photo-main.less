@@ -2,33 +2,68 @@
     background-color: @dark-blue;
 }
 
+.photo-main__title-container {
+  background-color: @gray;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 99% 28%;
+  background-size: 100%;
+  min-height: 170px;
+}
+
 .photo-main__title-wrapper {
   width: 360px;
   margin: 0 auto;
-
+  min-height: inherit;
 }
 
 .photo-main__title {
   display: block;
 	margin: 0;
-	padding: 0 20px;
+	padding: 0 30px;
 	padding-top: 35px;
-	padding-bottom: 50px;
 	text-align: center;
 	color: @white;
-	font-size: 18px;
+	font-size: 24px;
 	line-height: 30px;
 	font-weight: 300;
-	background-color: @gray;
-	background-image: url("../img/bg-back-mobile@1x.jpg");
-	background-repeat: no-repeat;
-	background-position: 99% 28%;
-	background-size: cover;
+}
+
+.photo-main__article-container {
+  background-image: url("../img/panorama-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  background-size: 100%;
+  min-height: 140px;
+}
+
+.photo-main__article-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  background-color: @gray;
+}
+
+.photo-main__image {
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .photo-main__title-wrapper{
     width: 660px;
+  }
+  .photo-main__article-container {
+    min-height: 510px;
+    background-image: url("../img/panorama-tablet@1x.jpg");
+  }
+
+  .photo-main__title-container {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .photo-main__article-wrapper {
+    width: 620px;
+    padding-bottom: 0;
   }
 
   .photo-main__title {
@@ -41,8 +76,20 @@
 
 @media (min-width: @desktop-width) {
   .photo-main__title-wrapper {
-    width: 1200px;
-    min-height: 280px;
+    width: 940px;
+  }
+
+  .photo-main__article-wrapper {
+    width: 940px;
+  }
+
+  .photo-main__article-container {
+    min-height: 510px;
+    background-image: url("../img/panorama-desktop@1x.jpg");
+  }
+
+  .photo-main__title-container {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
   .photo-main__title {
