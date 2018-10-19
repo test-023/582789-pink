@@ -1,7 +1,25 @@
-.slider-item:nth-child(2) {
-	display: none;
+.slider__item {
+  display: none;
+}
+.slider {
+  position: relative;
+}
+
+.slider__item:nth-child(1) {
+  display: block;
+}
+
+.slider__toggle {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+  background-color: @gray-border;
 }
 
 .slider__toggles {
-	
+
 }

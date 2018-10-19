@@ -117,41 +117,45 @@
               </article>
             </li>
           </ul>
-        </div>
-        <p class="user-photos__text">Затмите их всех!
+          <div class="user-photos__post-all">
+            <p class="user-photos__text">Затмите их всех!
         Выкладывайте все, что накопилось в телефоне!</p>
-      </div>
-    </section>
-    <section class="photo-editor">
-      <div class="photo-editor__wrapper">
-        <h2 class="visually-hidden">Редактор пользовательских фотографий</h2>
-        <form class="photo-editor__form">
-          <div class="photo-editor__image-container">
-            <img class="photo-editor__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Изображение">
           </div>
-          <div class="photo-editor__content-wrapper">
-            <div class="photo-editor__icons-sliders-container">
-              <div class="photo-editor__icons-container">
-                <button type="button" class="photo-editor__item photo-editor__item--active crop"><span class="visually-hidden">Обрезка</span></button>
-                <button type="button" class="photo-editor__item color-fill"><span class="visually-hidden">Заливка цветом</span></button>
-                <button type="button" class="photo-editor__item contrast"><span class="visually-hidden">Контрастность</span></button>
+        </div>
+      </section>
+      <section class="photo-editor">
+        <div class="photo-editor__wrapper">
+          <h2 class="visually-hidden">Редактор пользовательских фотографий</h2>
+          <form class="photo-editor__form">
+            <div class="photo-editor__image-container">
+              <p class="photo-editor__image">
+                <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Изображение">
+              </p>
+            </div>
+            <div class="photo-editor__content-wrapper">
+              <div class="photo-editor__icons-sliders-container">
+                <div class="photo-editor__icons-container">
+                  <button type="button" class="photo-editor__item photo-editor__item--active photo-editor__item-crop"><span class="visually-hidden">Обрезка</span></button>
+                  <button type="button" class="photo-editor__item photo-editor__item-color-fill"><span class="visually-hidden">Заливка цветом</span></button>
+                  <button type="button" class="photo-editor__item photo-editor__item-contrast"><span class="visually-hidden">Контрастность</span></button>
+                </div>
+                <div class="photo-editor__sliders-container">
+                  <input class="photo-editor__input" type="range" min="0" max="100" step="1" value="50">
+                  <input class="photo-editor__input" type="range" min="0" max="100" step="1" value="50">
+                  <input class="photo-editor__input" type="range" min="0" max="100" step="1" value="50">
+                </div>
               </div>
-              <div class="photo-editor__sliders-container">
-                <input class="photo-editor__input" type="range" min="0" max="100" step="1" value="50">
-                <input class="photo-editor__input" type="range" min="0" max="100" step="1" value="50">
-                <input class="photo-editor__input" type="range" min="0" max="100" step="1" value="50">
+              <div class="photo-editor__buttons">
+                <div class="photo-editor__button-post-container">
+                  <button class="photo-editor__post button">Запостить</button>
+                </div>
+                <div class="photo-editor__button-cancellation-container">
+                  <button class="photo-editor__cancellation button">Отмена</button>
+                </div>
               </div>
             </div>
-            <div class="photo-editor__buttons">
-              <div class="photo-editor__button-post-container">
-                <button class="photo-editor__post button">Запостить</button>
-              </div>
-              <div class="photo-editor__button-cancellation-container">
-                <button class="photo-editor__cancellation button">Отмена</button>
-              </div>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
