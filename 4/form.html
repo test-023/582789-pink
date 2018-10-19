@@ -25,108 +25,112 @@
           <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
-            <li class="site-list__item site-list__item--active"><a class="site-list__link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link">Конкурс</a></li>
             <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="form-main">
-      <div class="form-main__wrapper">
-        <div class="form-main-container">
-          <h1 class="form-main__title">Конкурс&#160;на&#160;самое&#160;безбашенное путешествие&#160;с&#160;Пинк</h1>
-          <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту</p>
+      <div class="form-main__intro-container">
+        <div class="form-main-intro">
+          <h1 class="form-main__title">Конкурс&#160;на&#160;самое безбашенное путешествие&#160;с&#160;Пинк</h1>
         </div>
-        <section class="filters">
-          <h2 class="visually-hidden">Фильтр шаблонов</h2>
-          <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filters__user-data filters__fildset">
-              <p class="filters__text">
-                <label class="filters__label" for="user-surname">Фамилия:</label>
-                <input class="filters__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию*">
-              </p>
-              <p class="filters__text">
-                <label class="filters__label" for="user-name">Имя:</label>
-                <input class="filters__input filters__input--long" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
-              </p>
-              <p class="filters__text">
-                <label class="filters__label" for="user-middle-name">Отчество:</label>
-                <input class="filters__input" id="user-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
-              </p>
-            </fieldset>
-            <fieldset class="filters__app filters__fildset" >
-              <legend class="filters__legend filters__text">С каким приложением путешествовали?</legend>
-              <ul class="filters__list">
-                <li class="filters__item">
-                  <input class="visually-hidden" type="radio" name="radio" id="filters-ios" checked>
-                  <label for="filters-ios">Pink для iOS</label>
-                </li>
-                <li class="filters__item">
-                  <input class="visually-hidden" type="radio" name="radio" id="filters-android">
-                  <label for="filters-android">Pink на Android</label>
-                </li>
-                <li class="filters__item">
-                  <input class="visually-hidden" type="radio" name="radio" id="filters-windows">
-                  <label for="filters-windows">Windows Phone</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filters__user-contacts filters__fildset">
-              <legend class="filters__legend filters__text">Контактная информация</legend>
-              <p class="filters__text filters__upside">
-                <label class="filters__label filters__label-down" for="user-tel">Номер телефона</label>
-                <input class="filters__input filters__input-up" id="user-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
-              </p>
-              <p class="filters__text filters__upside">
-                <label class="filters__label filters__label-down" for="user-email">Адрес почты</label>
-                <input class="filters__input filters__input-up" id="user-email" type="email" name="email" placeholder="Введите почту *">
-              </p>
-            </fieldset>
-            <fieldset class="filters__achievement filters__fildset">
-              <legend class="filters__legend filters__text">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</legend>
-              <ul class="filters__list">
-                <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" name="selfie" id="filter-selfie" checked>
-                  <label for="filter-selfie">Сделал селфи с акулой</label>
-                </li>
-                <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" name="beach" id="filter-beach" checked>
-                  <label for="filter-beach">Обгорел на пляже</label>
-                </li>
-                <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" name="Norris" id="filter-Norris">
-                  <label for="filter-Norris">Видел Чака Норриса</label>
-                </li>
-                <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" name="souvenir" id="filter-souvenir">
-                  <label for="filter-souvenir">Накупил сувениров</label>
-                </li>
-                <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" name="tower" id="filter-tower" checked>
-                  <label for="filter-tower">Удержал башню</label>
-                </li>
-                <li class="filters__item">
-                  <input class="visually-hidden" type="checkbox" name="hotel" id="filter-hotel">
-                  <label for="filter-hotel">Разгромил отель</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filters__emotions filters__fildset">
-              <legend class="filters__legend filters__text">Опишите свои эмоции</legend>
-              <p class="filters__text">
-                <label class="filters__label" for="user-text"></label>
-                <textarea class="filters__textarea" id="user-text" name="user-data-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              </p>
-            </fieldset>
-            <div class="filters__send-form">
-              <button class="filters__button button" type="button">Отправить форму</button>
-              <p class="filters__footnote"><sup class="filter__sup">*</sup> - Обязательные поля</p>
-            </div>
-          </form>
-        </section>
       </div>
+      <div class="form-main__story">
+        <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту</p>
+      </div>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filters__user-data filters__fildset">
+            <p class="filters__text">
+              <label class="filters__label" for="user-surname">Фамилия:</label>
+              <input class="filters__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию*">
+            </p>
+            <p class="filters__text">
+              <label class="filters__label" for="user-name">Имя:</label>
+              <input class="filters__input filters__input--long" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
+            </p>
+            <p class="filters__text">
+              <label class="filters__label" for="user-middle-name">Отчество:</label>
+              <input class="filters__input filters__input--last" id="user-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+            </p>
+          </fieldset>
+          <fieldset class="filters__app filters__fildset" >
+            <legend class="filters__legend filters__text">С каким приложением путешествовали?</legend>
+            <ul class="filters__list">
+              <li class="filters__item filter__item--radio">
+                <input class="visually-hidden" type="radio" name="radio" id="filters-ios" checked>
+                <label for="filters-ios">Pink для iOS</label>
+              </li>
+              <li class="filters__item filter__item--radio">
+                <input class="visually-hidden" type="radio" name="radio" id="filters-android">
+                <label for="filters-android">Pink на Android</label>
+              </li>
+              <li class="filters__item filter__item--radio">
+                <input class="visually-hidden" type="radio" name="radio" id="filters-windows">
+                <label for="filters-windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__user-contacts filters__fildset">
+            <legend class="filters__legend filters__text">Контактная информация</legend>
+            <div class="filters__user-container">
+              <p class="filters__text filters__upside">
+                <input class="filters__input filters__input-up" id="user-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                <label class="filters__label filters__label-down" for="user-tel">Номер телефона</label>
+              </p>
+              <p class="filters__text filters__upside">
+                <input class="filters__input filters__input-up" id="user-email" type="email" name="email" placeholder="Введите почту *">
+                <label class="filters__label filters__label-down" for="user-email">Адрес почты</label>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="filters__achievement filters__fildset">
+            <legend class="filters__legend filters__text">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</legend>
+            <ul class="filters__list filters__list--achievement">
+              <li class="filters__item">
+                <input class="visually-hidden" type="checkbox" name="selfie" id="filter-selfie" checked>
+                <label for="filter-selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden" type="checkbox" name="beach" id="filter-beach" checked>
+                <label for="filter-beach">Обгорел на пляже</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden" type="checkbox" name="Norris" id="filter-Norris">
+                <label for="filter-Norris">Видел Чака Норриса</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden" type="checkbox" name="souvenir" id="filter-souvenir">
+                <label for="filter-souvenir">Накупил сувениров</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden" type="checkbox" name="tower" id="filter-tower" checked>
+                <label for="filter-tower">Удержал башню</label>
+              </li>
+              <li class="filters__item">
+                <input class="visually-hidden" type="checkbox" name="hotel" id="filter-hotel">
+                <label for="filter-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__emotions filters__fildset">
+            <legend class="filters__legend filters__text">Опишите свои эмоции</legend>
+            <p class="filters__text">
+              <label class="filters__label" for="user-text"></label>
+              <textarea class="filters__textarea" id="user-text" name="user-data-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </p>
+          </fieldset>
+          <div class="filters__send-form">
+            <button class="filters__button button" type="button">Отправить форму</button>
+            <p class="filters__footnote"><sup class="filter__sup">*</sup> - Обязательные поля</p>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
