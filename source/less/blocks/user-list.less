@@ -1,8 +1,6 @@
 
 .user-list {
-
 }
-
 
 .user-list__item {
 	background-color: @gray;
@@ -39,4 +37,51 @@
 
 .user-list__author-image {
 	background-size: cover;
+}
+
+.user-list__content-container {
+  padding: 23px 20px;
+}
+
+.user-list__article {
+  padding: 23px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    width: 620px;
+    padding: 0 20px;
+  }
+  .user-list {
+    .flex;
+    justify-content: space-between;
+  }
+
+  .user-list__item {
+    width: 300px;
+  }
+
+  .user-list__content-container {
+  padding: 25px 28px;
+  }
+
+  .user-list__article {
+    padding-top: 0;
+  }
+
+  .user-list__content-container {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    width: 940px;
+    padding: 0;
+  }
+
+  .user-list__likes-wrapper {
+    right: 20px;
+  }
 }

@@ -1,10 +1,10 @@
 .filters {
-	width: 320px;
-	margin: 0 auto;
-	padding: 0 20px;
 	background-color: @white;
 	font-size: 18px;
 	line-height: 30px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 940px;
 }
 
 .filters__text {
@@ -13,10 +13,22 @@
 	line-height: 18px;
 }
 
+.filters__form {
+  .flex;
+}
+
 .filters__label {
-	display: block;
-	margin-bottom: 15px;
-	margin-left: 20px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.filters__fildset {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  width: 940px;
+  margin-bottom: 65px;
 }
 
 .filters__input {
@@ -24,55 +36,36 @@
 	font-size: 18px;
 	line-height: 30px;
 	margin-bottom: 25px;
-	width: 320px;
+	width: 340px;
 	box-sizing: border-box;
 }
 
-.filters__user-data {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.filters__achievement {
-	margin: 0;
-	padding: 0;
-	padding: 40px 0;
-	border: none;
-	margin: 0 -20px;
-	background-color: @gray;
-}
-
-.filters__app {
-	margin: 0 -20px;
-	border: none;
-	background-color: @gray;
-}
-
-.filters__list {
-	margin: 0;
-	paddimg: 0;
-	margin-left: 20px;
+.filters__input--long {
+  width: 380px;
 }
 
 .filters__legend {
 	text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .filters__item {
+  margin: 0 auto;
 	margin-bottom: 45px;
+  width: 33.3%;
+
 }
 
-.filters__emotions {
-	padding-top: 40px;
-	padding-bottom: 40px;
+.filter__item--radio {
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .filters__textarea {
-	padding: 20px 20px;
 	font-size: 18px;
 	line-height: 30px;
-	margin-bottom: 25px;
-	width: 320px;
+	width: 100%;
 	min-height: 200px;
 	box-sizing: border-box;
 }
@@ -85,6 +78,184 @@
 	text-align: center;
 }
 
+.filters__list {
+  .list;
+}
+
+.filters__list--achievement {
+  .flex;
+  padding: 0 60px;
+}
+
 .filter__sup {
 	color: @red;
+}
+
+.filters__send-form {
+  .flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters__user-data {
+  width: 427px;
+  border: none;
+}
+
+.filters__app {
+  width: 435px;
+  margin-left: 26px;
+}
+
+.filters__user-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.filters__input-up {
+  width: 375px;
+}
+
+.filters__upside {
+  .flex;
+  flex-direction: row;
+  width: 375px;
+}
+
+.filters__label-down {
+  margin-bottom: 23px;
+}
+
+.filters__emotions {
+  padding: 0px 60px;
+  padding-bottom: 45px;
+}
+
+.filters__send-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: @desktop-width) {
+  .filters {
+    width: 620px;
+  }
+
+  .filters__list--achievement {
+    display: block;
+  }
+
+  .filters__item {
+    width: 100%;
+  }
+
+  .filters__user-container {
+    display: block;
+    padding: 0;
+  }
+
+  .filters__input-up {
+    width: 100%;
+  }
+
+  .filters__upside {
+    width: 100%;
+  }
+
+  .filters__app {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .filters__user-data {
+    width: 100%;
+  }
+
+  .filters__input {
+    width: 525px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .filters {
+    width: 280px;
+    padding: 0 20px;
+  }
+
+  .filters__form {
+    display: flex;
+  }
+
+  .filters__fildset {
+    border: none;
+  }
+  .filters__user-container {
+    width: 280px;
+    padding: 0;
+  }
+
+  .filters__user-contacts legend {
+    display: none;
+  }
+
+  .filters__achievement {
+    background-color: @gray;
+    margin: 0 -20px;
+    padding-left: 30px;
+  }
+
+  .filters__app {
+    background-color: @gray;
+    margin: 0 -20px;
+    padding-left: 30px;
+  }
+
+  .filters__list--achievement {
+    padding: 0;
+  }
+
+  .filters__send-form {
+    justify-content: center;
+  }
+
+  .filters__emotions {
+    padding: 0;
+  }
+
+  .filters__input-up {
+    order: 2;
+  }
+  .filters__label-down {
+    order: 1;
+  }
+
+  .filters__input {
+    width: 100%;
+  }
+
+  .filters__user-data {
+    width: 280px;
+    order: 1;
+  }
+
+  .filters__achievement {
+    order: 2;
+  }
+
+  .filters__user-contacts {
+    order: 3;
+  }
+  .filters-app {
+    order: 4;
+  }
+
+  .filters-emotions {
+    order: 5;
+  }
+
+  .filters__send-form {
+    order: 6;
+  }
 }
